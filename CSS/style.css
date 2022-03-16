@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    border-style: none;
+    font-family: 'Nunito', sans-serif;
+    color:white
+}
+/*cores*/
+:root{
+    --cor1: #012340;
+    --cor2: #025939;
+    --cor3: #027333;
+    --cor4: #03A63C;
+    --cor5: #04D939;
+    
+}
+.fa-solid{
+    margin-right: 22px;
+    font-size: 25px;
+}
+.fa-brands{
+    font-size: 42px;
+    color: #04D939;
+}
+body{
+    background-color: var(--cor1);
+}
+h1{
+    font-weight: 800;
+}
+.button{
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition-duration: .4s;
+}
+.button:hover{
+    box-shadow: 2px 2px 4px var(--cor4);
+}
+.button--large{
+    color: var(--cor5);
+    background-color: transparent;
+    border: 1px solid var(--cor5);
+}
+.button--small{
+    background-color: var(--cor5);
+}
+/*header*/
+
+header{
+    padding: 2%;
+    text-align: center;
+}
+.header__buttons{
+    max-width: 280px;
+    justify-content: space-around;
+    margin: 2% auto;
+    display: flex;
+}
+/*SEC PROFILE*/
+.sec {
+    margin: 0 auto;
+    max-width: 90vw;
+    margin-bottom: 50px;
+}
+.profile--photo img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+.sec__profile{
+    max-width: 800px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.profile--photo{
+    max-width: 300px;
+}
+.profile__icons{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.profile__scrollDown p{
+    font-size: 30px;
+    color: var(--cor5);
+    transform: rotate(90deg);
+}
+.profile__scrollDown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+/*about*/
+.title{
+    margin: 20px 0px;
+    width: 100%;
+}
+
+.about{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-start;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--cor2);
+}
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+.desktop{
+    max-width: 500px;
+    border: 1px solid var(--cor5);
+    box-shadow: 2px 3px 5px var(--cor5);
+}
+.desktop img{
+    border-radius: 10px;
+    width: 100%;
+    transform: rotate(3deg);
+    transition-duration: .5s;
+}
+.desktop img:hover{
+    transform: rotate(-3deg);
+}
+.about__details{
+    margin: 0 auto;
+    width: 50%;
+}
+.about__text p{
+    margin: 20px 0px;
+}
+/*skills */
+.skill h2{
+    text-align: left;
+    padding-bottom: 10px;
+}
+.skill{
+    margin: 30px 0px;
+    background-color: #025939;
+    border-radius: 20px;
+    padding: 20px;
+    width: 48%;
+}
+.skills{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    display: flex;
+    align-items: center;
+}
+.loading{
+    background-color: var(--cor1);
+    border-radius: 10px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--cor5);
+    height: 20px;
+}
+.progress{
+    background-color: var(--cor5);
+    border-radius: 10px;
+    width: 70%;
+    height: 20px;
+    padding: 10px;
+}
+.loading-container{
+    padding: 0px 10px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.code{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 2px;
+    margin-right: 20px;
+}
+/*my works*/
+
+.works-container{
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.work{
+    margin: 20px 0px;
+    background-color: var(--cor2);
+    transition-duration: .5;
+    padding: 15px;
+    width: 28%;
+    border: 2px solid  var(--cor5);
+    border-radius: 20px;
+}
+.work-img img{
+    border-radius: 20px;
+    width: 100%;
+}
+/*footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #025939;
+    bottom: 0px;
+    width: 100vw;
+    height: 10vh;
+}
+
+/*responsivity*/
+@media (max-width:700px){
+    .header__buttons{
+        height: 160px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .profile__scrollDown{
+        display: none;
+    }
+    .profile__icons{
+        margin: 20px 0px;
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .sec__profile{
+        margin: 20px 0px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sec h1{
+        text-align: center;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .button--small--work{
+        width: 100%;
+    }
+    .button{
+        font-size: 22px;
+        padding: 20px 12px;
+    }
+    .desktop{
+        margin: 20px auto;
+    }
+    .about__details{
+        width: 100%;
+        margin: 20px;
+    }
+    .detail{
+        width: 100%;
+        margin: 20px;
+    }
+    .details{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__text p{
+        font-size: 20px;
+    }
+    /*skills*/
+    .skill{
+        width: 100%;
+    }
+    .skills{
+        flex-direction: column;
+    }
+    /*works*/
+    .work{
+        width: 100%;
+    }
+}
+[data-animate]{
+    opacity: 0;
+}
+[data-animate='left']{
+    transform: translate3d(-80px, 0, 0);
+}
+
+[data-animate='right']{
+    transform: translate3d(80px, 0, 0);
+}
+
+[data-animate='top']{
+    transform: translate3d(0, 80px, 0);
+}
+[data-animate='down']{
+    transform: translate3d(0, -80px, 0);
+}
+[data-animate='pisca']{
+    transform: translate3d(0, -80px, 0);
+}
+.animate{
+    transition-duration: 1s;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+.pisca{
+    animation-name: pisca;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes pisca {
+    from {box-shadow: 0px 0px 8px var(--cor2)}
+    to {box-shadow: 0px 0px 8px var(--cor5)}
+}
